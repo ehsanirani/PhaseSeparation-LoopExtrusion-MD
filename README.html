@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-04-08 Fr 10:02 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="John Doe" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org6f8b533">1. Structure of the folder and input files</a>
+<ul>
+<li><a href="#org065ac3f">1.1. Python scripts:</a></li>
+<li><a href="#orgadb664d">1.2. Sub-folders:</a></li>
+</ul>
+</li>
+<li><a href="#org041fec6">2. Installing software</a></li>
+<li><a href="#orgedf5fe4">3. Run simulations</a></li>
+<li><a href="#orgeae7aae">4. Demo simulation</a></li>
+<li><a href="#org09e599c">5. Expected output of simulations</a></li>
+</ul>
+</div>
+</div>
+<p>
+This repository contains the scripts to perform MD simulations of the polymer models discussed in the paper.
+</p>
+
+<div id="outline-container-org6f8b533" class="outline-2">
+<h2 id="org6f8b533"><span class="section-number-2">1.</span> Structure of the folder and input files</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+The current folder contains six Python scripts (.py) and three sub-folders.
+</p>
+</div>
+
+<div id="outline-container-org065ac3f" class="outline-3">
+<h3 id="org065ac3f"><span class="section-number-3">1.1.</span> Python scripts:</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+The main script of MD simulations is <code>sbs-le.py</code>. It takes as input three dependencies, i.e., the scripts <code>saw.py</code> (that prepares the initial state of simulation), <code>sbs_class.py</code> (that prepares the context for SBS simulations), <code>le4hoomd.py</code> (that prepares the context for LE simulations, is taken from its own repository on <a href="https://codeberg.org/ehsan/LE4hoomd">https://codeberg.org/ehsan/LE4hoomd</a>). The script <code>cont-dist-map-sbs-le.py</code> and <code>cont-dist-map-sbs-le2HDF.py</code> are model python scripts to produce, respectively in .txt and HDF formats, contact and distance maps from the output simulations (see below).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgadb664d" class="outline-3">
+<h3 id="orgadb664d"><span class="section-number-3">1.2.</span> Sub-folders:</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li><code>HCT116_chr21_30kb</code>: input files for LE and SBS simulations for the studied locus in HCT116 and corresponding python scripts to set model parameters. For model parameters see also the Methods sections of the paper.</li>
+<li><code>IMR90_chr21_30kb</code>: input files for LE and SBS simulations for the studied locus in IMR90 and corresponding python scripts to set model parameters. For model parameters see also the Methods sections of the paper.</li>
+<li>~ demo<sub>sim</sub>~: folder containing, as an example, a very short demo simulation of the eLE model in IMR90.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org041fec6" class="outline-2">
+<h2 id="org041fec6"><span class="section-number-2">2.</span> Installing software</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+The HOOMD-blue Python package can be installed on Linux-64 or OSx-64 systems by the following command line:
+<code>conda install -c conda-forge hoomd</code>
+Please note that the scripts are written for HOOM version 2.9.x. The installation time requires few minutes. All details on prerequisites (e.g., software packages and libraries) can be found at the official website <a href="http://glotzerlab.engin.umich.edu/hoomd-blue/">http://glotzerlab.engin.umich.edu/hoomd-blue/</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgedf5fe4" class="outline-2">
+<h2 id="orgedf5fe4"><span class="section-number-2">3.</span> Run simulations</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+To run one MD polymer simulation, use in the current folder the following command line:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">~python3 sbs-le.py --settings $<span style="color: #dcaeea;">LOCUS_chr21_30kb</span>.settings_$<span style="color: #dcaeea;">MODEL_</span>$<span style="color: #dcaeea;">LOCUS_30kb</span>.py --sim-id test$<span style="color: #dcaeea;">MODEL</span> --hoomd cpu
+</pre>
+</div>
+<ul class="org-ul">
+<li><code>$LOCUS</code> identifies the cell line to model: set it to <code>IMR90</code> or <code>HCT116</code>.</li>
+
+<li><code>$MODEL</code> identifies the model to simulate: set it to <code>LE</code> or <code>eLE</code> or <code>SBS</code> or <code>LESBS</code>.</li>
+</ul>
+
+<p>
+Thus, for example, to run one simulation of LE+SBS model in IMR90:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">python3 sbs-le.py --settings IMR90_chr21_30kb.settings_LESBS_IMR90_30kb.py --sim-id testLESBS --hoomd cpu
+</pre>
+</div>
+<p>
+Roughly 10 minutes occur to generate a demo simulation up to 2e6 timesteps on normal PC. To have fully equilibrated conformations, our simulations run up to 2e8 timesteps, so the running time of one simulation is tens of hours. To produce an ensemble of polymer conformations, simply run multiple copies (e.g., 1000) of the above scripts.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgeae7aae" class="outline-2">
+<h2 id="orgeae7aae"><span class="section-number-2">4.</span> Demo simulation</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+We provide as an example a demo run simulation of eLE model in IMR90 with very few timesteps (1.3e6 MD timesteps). To run the simulation, use in the current folder the following command line:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">python3 sbs-le.py --settings demo_sim.settings_eLE_IMR90_30kb.py --sim-id testeLE --hoomd cpu
+</pre>
+</div>
+
+<p>
+Note: the simulations we performed in the paper ran for thousands of MD timesteps to have fully equilibrated conformations (up to 2e8 MD timesteps); this demo is an example.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org09e599c" class="outline-2">
+<h2 id="org09e599c"><span class="section-number-2">5.</span> Expected output of simulations</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+The main output of a simulation is a gsd file named <code>test$MODEL-dump.gsd</code>, which contains all details of system dynamics at each simulated timestep (such as x-y-z coordinates, particle types and bond types, as standard in MD simulations). $MODEL is, again, one of the models mentioned before. Hence, in the case of an eLE simulation, the output will be named: <code>testeLE-dump.gsd</code>.
+</p>
+
+<p>
+The output gsd file can be easily analyzed by using standard python packages. As an example, we report the python script <code>cont-dist-map-sbs-le.py</code>, which computes distance and contact maps (in txt format) from the gsd output of the simulation. To run this python script, use the line:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">python3 cont-dist-map-sbs-le.py -i test$<span style="color: #dcaeea;">MODEL</span>-dump.gsd -o heatmap --particles $<span style="color: #dcaeea;">P</span> --t1 <span style="color: #da8548; font-weight: bold;">0.7</span> --t2 <span style="color: #da8548; font-weight: bold;">1.0</span> --step <span style="color: #da8548; font-weight: bold;">0.003</span> --contact-thr <span style="color: #da8548; font-weight: bold;">5.0</span> --dist TRUE~
+</pre>
+</div>
+<p>
+As before, set <code>$MODEl</code> to <code>LE</code> or <code>eLE</code> or <code>SBS</code> or <code>LESBS</code>. Set <code>$P</code> to &ldquo;750&rdquo; in IMR90 and &ldquo;930&rdquo; in HCT116.
+</p>
+
+<p>
+Similar command line holds for the python script <code>cont-dist-map-sbs-le2HDF.py</code>, which simply provides distance and contact map in HDF format.
+</p>
+
+<p>
+Other outputs printed during the simulation:
+</p>
+<ul class="org-ul">
+<li><code>test$MODEL-dump-ctcf.txt</code> (in LE-based simulations): txt file with simulated CTCF tracks.</li>
+<li><code>test$MODEL-restart.gsd</code>: gsd file to resume MD run in case the simulation breaks.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: John Doe</p>
+<p class="date">Created: 2022-04-08 Fr 10:02</p>
+</div>
+</body>
+</html>
