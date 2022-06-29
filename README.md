@@ -116,7 +116,6 @@ Simulations in the following works are performed by the code presented here:
 
 <a href="https://github.com/ehsanirani/PhaseSeparation-LoopExtrusion-MD/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ehsanirani/PhaseSeparation-LoopExtrusion-MD" />
-   <img src="https://contrib.rocks/image?repo=mattiaconte/mattiaconte" />
 </a>
 
 Made with [contrib.rocks](https://contrib.rocks).
