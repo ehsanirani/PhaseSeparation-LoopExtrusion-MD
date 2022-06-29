@@ -39,7 +39,7 @@ The main script of MD simulations is `sbs-le.py`. It takes as input three depend
 
 -   `HCT116_chr21_30kb`: input files for LE and SBS simulations for the studied locus in HCT116 and corresponding python scripts to set model parameters. For model parameters see also the Methods sections of the paper.
 -   `IMR90_chr21_30kb`: input files for LE and SBS simulations for the studied locus in IMR90 and corresponding python scripts to set model parameters. For model parameters see also the Methods sections of the paper.
--   ~ demo<sub>sim</sub>~: folder containing, as an example, a very short demo simulation of the eLE model in IMR90.
+-   `demo<sub>sim</sub>`: folder containing, as an example, a very short demo simulation of the eLE model in IMR90.
 
 
 <a id="org6d7c358"></a>
