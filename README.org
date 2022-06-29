@@ -14,7 +14,7 @@ The main script of MD simulations is ~sbs-le.py~. It takes as input three depend
 *** Sub-folders:
 - ~HCT116_chr21_30kb~: input files for LE and SBS simulations for the studied locus in HCT116 and corresponding python scripts to set model parameters. For model parameters see also the Methods sections of the paper.
 - ~IMR90_chr21_30kb~: input files for LE and SBS simulations for the studied locus in IMR90 and corresponding python scripts to set model parameters. For model parameters see also the Methods sections of the paper.
-- ~ demo_sim~: folder containing, as an example, a very short demo simulation of the eLE model in IMR90.
+- ~demo_sim~: folder containing, as an example, a very short demo simulation of the eLE model in IMR90.
 
 ** Installing software
 The HOOMD-blue Python package can be installed on Linux-64 or OSx-64 systems by the following command line:
