@@ -109,14 +109,3 @@ Simulations in the following works are performed by the code presented here:
 
 -   [Loop-extrusion and polymer phase-separation can co-exist at the single-molecule level to shape chromatin folding](https://www.biorxiv.org/content/10.1101/2021.11.02.466589v1)
 
-
-<a id="org1af79e9"></a>
-
-# Contributors
-
-<a href="https://github.com/ehsanirani/PhaseSeparation-LoopExtrusion-MD/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ehsanirani/PhaseSeparation-LoopExtrusion-MD" />
-</a>
-
-Made with [contrib.rocks](https://contrib.rocks).
-
