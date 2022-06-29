@@ -15,7 +15,6 @@ To improve reproducibility, the present repository is provided with the followin
 4.  [Demo simulation](#orga3d6646)
 5.  [Expected output of simulations](#org4b3a092)
 6.  [Research projects](#org658b6d5)
-7.  [Contributors](#org1af79e9)
 
 
 
