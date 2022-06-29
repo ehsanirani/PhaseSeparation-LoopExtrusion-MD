@@ -1,5 +1,5 @@
 
-This repository contains the scripts to perform MD simulations of the polymer models discussed in the paper:
+This repository contains the scripts to perform Molecular Dynamics (MD) simulations of the polymer models discussed in the paper:
 
 [Loop-extrusion and polymer phase-separation can co-exist at the single-molecule level to shape chromatin folding](https://www.biorxiv.org/content/10.1101/2021.11.02.466589v1)
 
