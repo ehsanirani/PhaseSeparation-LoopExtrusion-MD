@@ -1,4 +1,10 @@
 
+This repository contains the scripts to perform MD simulations of the polymer models discussed in the paper:
+
+[Loop-extrusion and polymer phase-separation can co-exist at the single-molecule level to shape chromatin folding](https://www.biorxiv.org/content/10.1101/2021.11.02.466589v1)
+
+To improve reproducibility, the present repository is provided with the following [DOI: 10.5281/zenodo.6726064](https://doi.org/10.5281/zenodo.6726064).
+
 # Table of Contents
 
 1.  [Structure of the folder and input files](#orgd8d06c7)
@@ -11,11 +17,6 @@
 6.  [Research projects](#org658b6d5)
 7.  [Contributors](#org1af79e9)
 
-This repository contains the scripts to perform MD simulations of the polymer models discussed in the paper:
-
-[Loop-extrusion and polymer phase-separation can co-exist at the single-molecule level to shape chromatin folding](https://www.biorxiv.org/content/10.1101/2021.11.02.466589v1)
-
-To improve reproducibility, the present repository is provided with the following [DOI: 10.5281/zenodo.6726064](https://doi.org/10.5281/zenodo.6726064).
 
 
 <a id="orgd8d06c7"></a>
