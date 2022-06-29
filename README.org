@@ -3,6 +3,8 @@ This repository contains the scripts to perform MD simulations of the polymer mo
 
  [[https://www.biorxiv.org/content/10.1101/2021.11.02.466589v1][Loop-extrusion and polymer phase-separation can co-exist at the single-molecule level to shape chromatin folding]]
 
+To improve reproducibility, the present repository is provided with the following [[https://doi.org/10.5281/zenodo.6726064][DOI: 10.5281/zenodo.6726064]].
+
 ** Structure of the folder and input files
 The current folder contains six Python scripts (.py) and three sub-folders.
 
